@@ -1,0 +1,8 @@
+{
+  "name": "carVisualizer",
+  "app_id": "39c26f02",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
