@@ -11,75 +11,75 @@
         "trims": {
           "0-Discreet": {
             "name": "Discreet",
-            "price": "$ 161,300"
+            "price": "161,300"
           },
           "1-Stealth": {
             "name": "Stealth",
-            "price": "$ 163,700.00"
+            "price": "163,700"
           },
           "2-Ultimate": {
             "name": "Ultimate",
-            "price": "$ 166,200"
+            "price": "166,200"
           }
         },
         "colors": {
           "0-Daytona Grey Matte Effect": {
             "name": "Daytona Grey Matte Effect",
-            "price": "$ 6,800",
+            "price": "6,800",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Ext-Grey.jpg?alt=media&token=114a0554-66db-4772-a686-0a8023b5bdd3"
           },
           "1-Panther Black Crystal Effect": {
             "name": "Panther Black Crystal Effect",
-            "price": "$ 400",
+            "price": "400",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Ext-Black.jpg?alt=media&token=c9f5ad50-1ee8-4a53-a609-6cd2fb5b5b8a"
           },
           "2-Sepang Blue Pearl Effect": {
             "name": "Sepang Blue Pearl Effect",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Ext-Blue.jpg?alt=media&token=cd22e833-3900-45a4-b233-78ae0809f240"
           },
           "3-Misano Red Pearl Effect": {
             "name": "Misano Red Pearl Effect",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Ext-Red.jpg?alt=media&token=ed14e8da-7d4a-4d8e-9787-628abed9f11e"
           },
           "4-Glacier White Metallic": {
             "name": "Glacier White Metallic",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Ext-White.jpg?alt=media&token=f7b6759b-00df-4db1-9c2a-d8bd262e54ce"
           },
           "5-Black with Rock grey stitching": {
-            "name": "5-Black with Rock grey stitching",
-            "price": "$ 0",
+            "name": "Black with Rock grey stitching",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Int-1.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "6-Black with Black stitching": {
             "name": "Black with Black stitching",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Int-2.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "7-Lunar Silver with Rock Grey stitching": {
             "name": "Lunar Silver with Rock Grey stitching",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Int-3.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "8-Black Valcona leather": {
             "name": "Black Valcona leather",
-            "price": "$ 500",
+            "price": "500",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Int-4.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "9-Black Valcona leather with honeycomb stitching": {
             "name": "Black Valcona leather with honeycomb stitching",
-            "price": "$ 1000",
+            "price": "1000",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Int-5.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           }
@@ -92,101 +92,101 @@
         "trims": {
           "0-V10": {
             "name": "V10",
-            "price": "$ 185,000"
+            "price": "185,000"
           },
           "1-V10 Plus": {
             "name": "V10 Plus",
-            "price": "$ 214,900"
+            "price": "214,900"
           }
         },
         "colors": {
           "0-Camouflage Green Matte Effect": {
             "name": "Camouflage Green Matte Effect",
-            "price": "$ 6,800",
+            "price": "6,800",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Green.jpg?alt=media&token=90af93d6-88a1-4ed3-a727-994953039c12"
           },
           "1-Ara Blue Crystal Effect": {
             "name": "Ara Blue Crystal Effect",
-            "price": "$ 1,290",
+            "price": "1,290",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Blue.jpg?alt=media&token=fd77fd6b-658e-4782-b96b-7c4ba988df12"
           },
           "2-Daytona Grey Pearl Effect": {
             "name": "Daytona Grey Pearl Effect",
-            "price": "$ 890",
+            "price": "890",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Grey.jpg?alt=media&token=d39253af-36cd-4732-8ddb-bbbeffde920c"
           },
           "3-Mythos Black Metallic": {
             "name": "Mythos Black Metallic",
-            "price": "$ 890",
+            "price": "890",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Black.jpg?alt=media&token=a4563a5c-c4ec-432e-ba11-2c5082f3b055"
           },
           "4-Dynamite Red": {
             "name": "Dynamite Red",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Red.jpg?alt=media&token=64d15e31-78df-434f-990a-57149854bd29"
           },
           "5-Ibis White": {
             "name": "Ibis White",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-White.jpg?alt=media&token=551fc09c-c058-431b-9cc9-00f2626416d7"
           },
           "6-Vegas Yellow": {
             "name": "Vegas Yellow",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Yellow.jpg?alt=media&token=81dcb56b-2863-434c-a0fa-87f4d17840d2"
           },
           "7-Vermont Brown": {
             "name": "Vermont Brown",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-1.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "8-Express Red": {
             "name": "Express Red",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-2.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "9-Rotor Grey": {
             "name": "Rotor Grey",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-3.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "10-Black with Express Red stitching": {
             "name": "Black with Express Red stitching",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-4.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "11-Black with Vegas Yellow stitching": {
             "name": "Black with Vegas Yellow stitching",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-5.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "12-Black with Macaw Blue stitching": {
             "name": "Black with Macaw Blue stitching",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-6.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "13-Black with White stitching": {
             "name": "Black with White stitching",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-7.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "14-Black with Black stitching": {
             "name": "Black with Black stitching",
-            "price": "$ 6,200",
+            "price": "6,200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-8.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           }
@@ -206,71 +206,71 @@
         "trims": {
           "0-C Coupe": {
             "name": "C Coupe",
-            "price": "$ 163,000.00"
+            "price": "163000"
           },
           "1-R Coupe": {
             "name": "R Coupe",
-            "price": "$ 183,000.00"
+            "price": "183000"
           }
         },
         "colors": {
           "0-AMG Green Hell MAGNO": {
             "name": " AMG Green Hell MAGNO",
-            "price": "$ 9,500",
+            "price": "9500",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Ext-Green.jpg?alt=media&token=e09b10f8-d257-4878-bffe-9bd30676adc2"
           },
           "1-AMG Solarbeam Metallic": {
             "name": "AMG Solarbeam Metallic",
-            "price": "$ 9,500",
+            "price": "9500",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Ext-Yellow.jpg?alt=media&token=49a9d448-7b74-400a-86e9-10e7f03c01f3"
           },
           "2-Selenite Grey MAGNO": {
             "name": "Selenite Grey MAGNO",
-            "price": "$ 1,700",
+            "price": "1700",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Ext-Grey.jpg?alt=media&token=e56cce9e-d564-4034-b048-5dc1184bfbc1"
           },
           "3-Iridium Silver MAGNO": {
             "name": "Iridium Silver MAGNO",
-            "price": "$ 1,700",
+            "price": "1700",
             "type": "ext",
-            "src": ""
+            "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Ext-White.jpg?alt=media&token=ac036488-9666-4db3-aa4d-69c75f507533"
           },
           "4-Hyacinth Red Metallic": {
             "name": "Hyacinth Red Metallic",
-            "price": "$ 1,400",
+            "price": "1400",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Ext-Red.jpg?alt=media&token=c89f103a-ef24-431a-8bad-d73e90f8cc16"
           },
           "5-Black": {
             "name": "Black",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Ext-Black.jpg?alt=media&token=25d841e9-bc24-4ee3-aa01-58a6f2c2ecd8"
           },
           "6-AMG Piano Black Lacquer": {
             "name": "AMG Piano Black Lacquer",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Int-1.jpg?alt=media&token=4dc1c054-fbba-468d-a4d9-232313ee57fe"
           },
           "7-Black Exclusive Nappa Leather": {
             "name": "Black Exclusive Nappa Leather",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Int-2.jpg?alt=media&token=4dc1c054-fbba-468d-a4d9-232313ee57fe"
           },
           "8-Black with yellow contrast stitching Exclusive Nappa Leather": {
             "name": "Black with yellow contrast stitching Exclusive Nappa Leather",
-            "price": "$ 2,900",
+            "price": "2900",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Int-3.jpg?alt=media&token=4dc1c054-fbba-468d-a4d9-232313ee57fe"
           },
           "9-AMG Matte Carbon Fibre": {
             "name": "AMG Matte Carbon Fibre",
-            "price": "$ 2,900",
+            "price": "2900",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/AMG-Int-4.jpg?alt=media&token=4dc1c054-fbba-468d-a4d9-232313ee57fe"
           }
@@ -283,59 +283,59 @@
         "trims": {
           "0-Deluxe": {
             "name": "Deluxe",
-            "price": "$ 240,500"
+            "price": "240500"
           },
           "1-Ultimate": {
             "name": "Ultimate",
-            "price": "$ 260,000"
+            "price": "260000"
           }
         },
         "colors": {
           "0-Alanite Grey MAGNO": {
             "name": "Alanite Grey MAGNO",
-            "price": "$ 5,200",
+            "price": "5200",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Ext-Grey.jpg?alt=media&token=23823c98-2609-431d-ab86-93be8be625ef"
           },
           "1-Cashmere White MAGNO": {
             "name": "Cashmere White MAGNO",
-            "price": "$ 5,200",
+            "price": "5200",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Ext-White.jpg?alt=media&token=848fe979-4201-4344-9f4f-2dc4985d6a26"
           },
           "2-Anthracite Blue Metallic": {
             "name": "Anthracite Blue Metallic",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Ext-Blue.jpg?alt=media&token=9d98df96-0f1e-4ab5-9ec4-214590e8bae4"
           },
           "3-Black": {
             "name": "Black",
-            "price": "$ 0",
+            "price": "0",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Ext-Black.jpg?alt=media&token=3a559be8-7049-4ce6-baa2-b2aab7c0d6e5"
           },
           "4-Anthracite Poplar Wood Trim": {
             "name": "Anthracite Poplar Wood Trim",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Int-1.jpg?alt=media&token=d09e7e58-c73d-4614-8c3a-e8b4308ae5d1"
           },
           "5-Burl Walnut Wood Trim": {
             "name": "Burl Walnut Wood Trim",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Int-2.jpg?alt=media&token=d09e7e58-c73d-4614-8c3a-e8b4308ae5d1"
           },
           "6-Piano Black Flowing Lines": {
             "name": "Piano Black Flowing Lines",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Int-3.jpg?alt=media&token=d09e7e58-c73d-4614-8c3a-e8b4308ae5d1"
           },
           "7-Piano Black Lacquer": {
             "name": "Piano Black Lacquer",
-            "price": "$ 0",
+            "price": "0",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/May-Int-4.jpg?alt=media&token=d09e7e58-c73d-4614-8c3a-e8b4308ae5d1"
           }
