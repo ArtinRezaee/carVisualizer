@@ -2,7 +2,7 @@
 export interface Color {
     id: string,
     name: string,
-    price: string,
+    price: number,
     src: string,
     type: string
 }
