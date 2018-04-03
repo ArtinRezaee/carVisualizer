@@ -1,5 +1,4 @@
 import { CustomizationPage } from './../pages/customization/customization';
-import { FIREBASE_CONFING } from './app.firebase.config';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -9,6 +8,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
+import { FIREBASE_CONFING } from './app.firebase.config';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -38,4 +38,5 @@ import { HomePage } from '../pages/home/home';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
+
 export class AppModule {}

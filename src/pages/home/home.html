@@ -12,42 +12,44 @@
 </ion-header>
 
 <ion-content padding>
+  <button ion-button block (click)="log()">Log all data</button>
+
   <ion-grid>
     <ion-row>
       <h5 margin-top>Select a Manufacturer</h5>
       <ion-item padding-right>
         <ion-label>Manufacturer</ion-label>
-        <ion-select [(ngModel)]="manufacturer" (ionChange)="getModels()">
-          <ion-option value="Honda">Honda</ion-option>
-          <ion-option value="Volkswagen">Volkswagen</ion-option>
+        <ion-select [(ngModel)]="manufacturer" (ionChange)="manuChange(manufacturer.name)">
+          <ion-option *ngFor="let manufacturer of manufacturers | async" [value]="manufacturer">{{manufacturer.name}}</ion-option>
         </ion-select>
       </ion-item>
     </ion-row>
 
-    <ion-row>
+    <ion-row *ngIf="manufacturer != null">
       <h5 style="margin-top:60px">Select a Model</h5>
       <ion-item padding-right>
         <ion-label>Models</ion-label>
-        <ion-select [(ngModel)]="modelSelected" (ionChange)="getTrims()">
-          <ion-option *ngFor="let model of models">{{model}}</ion-option>
+        <ion-select [(ngModel)]="model" (ionChange)="modelChange(model.id)">
+          <ion-option *ngFor="let model of models | async" [value]="model">{{model.name}}</ion-option>
         </ion-select>
       </ion-item>
     </ion-row>
 
-    <ion-row>
+    <ion-row *ngIf="model != null">
       <h5 style="margin-top:60px">Select a Trim</h5>
       <ion-item padding-right>
-        <ion-label>trims</ion-label>
-        <ion-select [(ngModel)]="trimSelected">
-          <ion-option *ngFor="let trim of trims">{{trim}}</ion-option>
+        <ion-label>Trims</ion-label>
+        <ion-select [(ngModel)]="trim">
+          <ion-option *ngFor="let trim of trims | async" [value]="trim">{{trim.name}}</ion-option>
         </ion-select>
       </ion-item>
     </ion-row>
   </ion-grid> 
+
 </ion-content>
 
 
-<ion-footer *ngIf="manufacturer && modelSelected && trimSelected">
+<ion-footer *ngIf="manufacturer && model && trim">
   <ion-buttons end>
       <button color="buttons" ion-button icon-end margin-right margin-bottom (click)="customizeVehicle()">
           Next

@@ -1,56 +1,56 @@
-import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
-import { CustomizationPage } from './../customization/customization';
+import { AngularFireDatabase } from 'angularfire2/database';
 import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
-import { Observable } from '@firebase/util';
+import { Observable } from 'rxjs/Observable';
+
+import { CustomizationPage } from './../customization/customization';
+import { Manufacturer } from './../../data_structs/manufacturer';
+import { Model } from './../../data_structs/model';
+import { Trim } from './../../data_structs/trim';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
-export class HomePage {
-  
-  manufacturer: String = "";
+export class HomePage { 
+  manufacturers: Observable<Manufacturer[]>;
+  models: Observable<Model[]>;
+  trims: Observable<Trim[]>;
 
-  models: any[] = [];
-  modelSelected: String = "";
+  manufacturer: Manufacturer = null;
+  model: Model = null;
+  trim: Trim = null;
 
-  trims: any[] = [];
-  trimSelected: string = "";
+  constructor(public navCtrl: NavController, private fDB: AngularFireDatabase, 
+    private loadingCtrl: LoadingController) {}
 
-  constructor(public navCtrl: NavController, 
-    private _fDB: AngularFireDatabase, 
-    private _loadingCtrl: LoadingController) {}
-
-  ionViewDidLoad(){
-   let loading = this._loadingCtrl.create({spinner:'crescent', content: 'Please Wait...'})
+  ionViewDidLoad() {
+   let loading = this.loadingCtrl.create({spinner:'crescent', content: 'Please Wait...'})
    loading.present();
 
+   this.manufacturers = this.fDB.list<Manufacturer>('manufacturers').valueChanges();
    loading.dismiss();
   }
 
-  getModels(){
-    if(this.manufacturer == "Honda")
-      this.models = ["Civic", "Accord"];
-    else if (this.manufacturer == "Volkswagen")
-      this.models = ["Golf", "Jetta"];
+  manuChange(manuID: string) {
+    let loading = this.loadingCtrl.create({spinner:'crescent', content: 'Please Wait...'})
+    loading.present();
+    this.models = this.fDB.list<Model>('manufacturers/' + manuID + '/models').valueChanges();
+    loading.dismiss();
   }
 
-  getTrims(){
-    if(this.modelSelected == 'Civic')
-      this.trims = ["LX 4dr Sedan", "LX 2dr Coupe"]
-    else if(this.modelSelected == 'Accord')
-      this.trims = ["LX", "Sport"]
-    else if(this.modelSelected == "Golf")
-      this.trims = ["GTI", "Type R"]
-    else
-      this.trims = ["SE", "SE Sport"]
+  modelChange(modelID: string) {
+    let loading = this.loadingCtrl.create({spinner:'crescent', content: 'Please Wait...'})
+    loading.present();
+    this.trims = this.fDB.list<Trim>('manufacturers/' + this.manufacturer.name + '/models/' + modelID + '/trims').valueChanges();
+    loading.dismiss();
   }
 
-  customizeVehicle(){
-    this.navCtrl.push(CustomizationPage, {manufacturer: this.manufacturer, model: this.modelSelected, trim: this.trimSelected});
+  log() {
+    console.log(this.manufacturer, this.model, this.trim);
   }
 
-
-
+  customizeVehicle() {
+    this.navCtrl.push(CustomizationPage, {manufacturer: this.manufacturer, model: this.model, trim: this.trim});
+  }
 }
