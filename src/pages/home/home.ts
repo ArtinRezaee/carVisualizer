@@ -4,9 +4,7 @@ import { NavController, LoadingController } from 'ionic-angular';
 import { Observable } from 'rxjs/Observable';
 
 import { CustomizationPage } from './../customization/customization';
-import { Manufacturer } from './../../data_structs/manufacturer';
-import { Model } from './../../data_structs/model';
-import { Trim } from './../../data_structs/trim';
+import { Manufacturer, Model, Trim } from './../../data_structs/structs';
 
 @Component({
   selector: 'page-home',
@@ -46,10 +44,6 @@ export class HomePage {
     this.trims = this.fDB.list<Trim>('manufacturers/' + this.manufacturer.name + '/models/' + modelID + '/trims').valueChanges();
     this.trim = null;
     loading.dismiss();
-  }
-
-  log() {
-    console.log(this.manufacturer, this.model, this.trim);
   }
 
   customizeVehicle() {

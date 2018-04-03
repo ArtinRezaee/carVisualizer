@@ -12,21 +12,38 @@
   </ion-header>
 
 <ion-content padding>
+
   <ion-card>
-    <ion-slides #sliderOne>
+
+    <ion-slides #sliderOne *ngIf="desktop">
       <ion-slide *ngFor="let color of extColors">
-        <img src='{{color.src}}'>
+        <img class="dext" src='{{color.src}}'>
       </ion-slide>
     </ion-slides>
-    <ion-slides #sliderTwo>
+
+    <ion-slides #sliderTwo *ngIf="desktop">
       <ion-slide *ngFor="let color of intColors">
-        <img src='{{color.src}}'>
+        <img class="dint" src='{{color.src}}'>
       </ion-slide>
     </ion-slides>
+
+
+    <ion-slides #sliderOne *ngIf="!desktop">
+      <ion-slide *ngFor="let color of extColors">
+        <img class="iext" src='{{color.src}}'>
+      </ion-slide>
+    </ion-slides>
+
+    <ion-slides #sliderTwo *ngIf="!desktop">
+      <ion-slide *ngFor="let color of intColors">
+        <img class="iint" src='{{color.src}}'>
+      </ion-slide>
+    </ion-slides>
+    
     <ion-card-content>
-      <ion-card-title>{{mod.name}}</ion-card-title>
-      <p><b>{{trim.name}}</b></p>
-      <p>{{mod.desc}}</p>
+      <ion-card-title>{{model.name}}</ion-card-title>
+      <ion-card-header>{{trim.name}}</ion-card-header>
+      <p style="text-align: justify;">{{model.desc}}</p>
 
       <ion-grid>
         <ion-row>

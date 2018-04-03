@@ -12,8 +12,6 @@
 </ion-header>
 
 <ion-content padding>
-  <button ion-button block (click)="log()">Log all data</button>
-
   <ion-grid>
     <ion-row>
       <h5 margin-top>Select a Manufacturer</h5>
@@ -51,7 +49,7 @@
 
 <ion-footer *ngIf="manufacturer && model && trim">
   <ion-buttons end>
-      <button color="buttons" ion-button icon-end margin-right margin-bottom (click)="customizeVehicle()">
+      <button ion-button icon-end margin-right margin-bottom color="buttons" (click)="customizeVehicle()">
           Next
           <ion-icon name="arrow-forward"></ion-icon>
       </button>
