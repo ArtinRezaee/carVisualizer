@@ -40,42 +40,46 @@
       </ion-slide>
     </ion-slides>
     
-    <ion-card-content>
-      <ion-card-title>{{model.name}}</ion-card-title>
-      <ion-card-header>{{trim.name}}</ion-card-header>
-      <p style="text-align: justify;">{{model.desc}}</p>
+    <ion-card-title style="padding-left: 15px; margin-top: 20px;">
+      {{model.name}}<br>
+      {{trim.name}} - {{trim.price | currency:'CAD':'1.0-0'}}
+    </ion-card-title>
+    <ion-card-content style="text-align: justify;">     
+      {{model.desc}}
 
       <ion-grid>
         <ion-row>
-          <h5 margin-top>Choose an Exterior Colour</h5>
           <ion-item padding-right>
             <ion-label style="font-size:14px">Exterior Colours</ion-label>
             <ion-select [(ngModel)]="extClr" (ionChange)="exteriorChange(extClr)" style="font-size:14px">
               <ion-option *ngFor="let extClr of extColors" [value]="extClr">{{extClr.name}}</ion-option>
             </ion-select>
-          </ion-item>
+          </ion-item>          
         </ion-row>
     
-        <ion-row >
-          <h5 margin-top>Choose an Interior Colour</h5>
+        <ion-row>
           <ion-item padding-right>
             <ion-label style="font-size:14px">Interior Colors</ion-label>
             <ion-select [(ngModel)]="intClr" (ionChange)="interiorChange(intClr)" style="font-size:14px">
               <ion-option *ngFor="let intClr of intColors" [value]="intClr">{{intClr.name}}</ion-option>
             </ion-select>
-          </ion-item>
+          </ion-item>          
         </ion-row>
       </ion-grid>
+
+      <ion-card-header *ngIf="extClr != undefined && intClr != undefined && total > 0">
+        <u>Selected:</u><br><br>
+        {{extClr.name}}&nbsp;&nbsp;+&nbsp;{{extClr.price | currency:'CAD':'1.0-0'}}<br>
+        {{intClr.name}}&nbsp;&nbsp;+&nbsp;{{intClr.price | currency:'CAD':'1.0-0'}}<br><br>
+        <b>Total Price:&nbsp;{{total | currency:'CAD':'1.0-0'}}</b>
+      </ion-card-header>
+
     </ion-card-content>
 
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-left clear small>
-          <ion-icon name="folder-open"></ion-icon>
-          <div>Save</div>
-        </button>
-      </ion-col>
-    </ion-row>
+    <button ion-button icon-left clear block large icon-start *ngIf="extClr != undefined && intClr != undefined && total > 0" (click)="save()">
+      <ion-icon name="folder-open"></ion-icon>
+      Save
+    </button>
   </ion-card>
 
 </ion-content>
