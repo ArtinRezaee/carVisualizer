@@ -36,6 +36,7 @@ export class HomePage {
     let loading = this.loadingCtrl.create({spinner:'crescent', content: 'Please Wait...'})
     loading.present();
     this.models = this.fDB.list<Model>('manufacturers/' + manuID + '/models').valueChanges();
+    this.trim = null;
     loading.dismiss();
   }
 
@@ -43,6 +44,7 @@ export class HomePage {
     let loading = this.loadingCtrl.create({spinner:'crescent', content: 'Please Wait...'})
     loading.present();
     this.trims = this.fDB.list<Trim>('manufacturers/' + this.manufacturer.name + '/models/' + modelID + '/trims').valueChanges();
+    this.trim = null;
     loading.dismiss();
   }
 

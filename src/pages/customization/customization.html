@@ -1,11 +1,64 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-title>customization</ion-title>
+    <ion-title>
+      Customization
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button menuToggle>
+          <ion-icon name="menu" color="buttons"></ion-icon>
+        </button>
+      </ion-buttons>    
   </ion-navbar>
-
-</ion-header>
+  </ion-header>
 
 <ion-content padding>
+  <ion-card>
+    <ion-slides #sliderOne>
+      <ion-slide *ngFor="let color of extColors">
+        <img src='{{color.src}}'>
+      </ion-slide>
+    </ion-slides>
+    <ion-slides #sliderTwo>
+      <ion-slide *ngFor="let color of intColors">
+        <img src='{{color.src}}'>
+      </ion-slide>
+    </ion-slides>
+    <ion-card-content>
+      <ion-card-title>{{mod.name}}</ion-card-title>
+      <p><b>{{trim.name}}</b></p>
+      <p>{{mod.desc}}</p>
+
+      <ion-grid>
+        <ion-row>
+          <h5 margin-top>Choose an Exterior Colour</h5>
+          <ion-item padding-right>
+            <ion-label style="font-size:14px">Exterior Colours</ion-label>
+            <ion-select [(ngModel)]="extClr" (ionChange)="exteriorChange(extClr)" style="font-size:14px">
+              <ion-option *ngFor="let extClr of extColors" [value]="extClr">{{extClr.name}}</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-row>
+    
+        <ion-row >
+          <h5 margin-top>Choose an Interior Colour</h5>
+          <ion-item padding-right>
+            <ion-label style="font-size:14px">Interior Colors</ion-label>
+            <ion-select [(ngModel)]="intClr" (ionChange)="interiorChange(intClr)" style="font-size:14px">
+              <ion-option *ngFor="let intClr of intColors" [value]="intClr">{{intClr.name}}</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-left clear small>
+          <ion-icon name="folder-open"></ion-icon>
+          <div>Save</div>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 
 </ion-content>
