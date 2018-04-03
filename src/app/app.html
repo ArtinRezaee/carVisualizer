@@ -1,1 +1,28 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="nav" persistent="true" side="right" (ionOpen)="openMenu()">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title style="text-transform:capitalize" text-wrap>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <button ion-item color="backG" (click)="onHome()">
+                <ion-icon name="home" color="primary" item-left></ion-icon>
+                <b>Home</b>
+            </button>
+            <button ion-item color="backG" (click)="onSavedCars()" *ngIf="isloggedIn">
+                <ion-icon name="car" color="brwn" item-left></ion-icon>
+                <b>Saved Cars</b>
+            </button>
+            <button ion-item color="backG" (click)="onLogin()" *ngIf="!isloggedIn">
+                <ion-icon name="log-in" color="secondary" item-left></ion-icon>
+                <b>Sign In</b>
+            </button>
+            <button ion-item color="backG" (click)="onLogOut()" *ngIf="isloggedIn">
+                <ion-icon name="log-out" color="drkRed" item-left></ion-icon>
+                <b>Sign Out</b>
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="homePage" #nav></ion-nav>
