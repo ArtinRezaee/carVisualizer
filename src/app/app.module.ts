@@ -13,13 +13,19 @@ import { FIREBASE_CONFING } from './app.firebase.config';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { Auth } from '../services/auth';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     CustomizationPage,
+<<<<<<< HEAD
     DealershipPage
+=======
+    LoginPage
+>>>>>>> 66b1dc76baac9953a4668181d2b6fd9c37624399
   ],
   imports: [
     BrowserModule,
@@ -33,12 +39,17 @@ import { HomePage } from '../pages/home/home';
     MyApp,
     HomePage,
     CustomizationPage,
+<<<<<<< HEAD
     DealershipPage
+=======
+    LoginPage
+>>>>>>> 66b1dc76baac9953a4668181d2b6fd9c37624399
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Auth
   ]
 })
 

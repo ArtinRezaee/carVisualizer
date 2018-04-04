@@ -11,21 +11,21 @@
         "trims": {
           "0-Discreet": {
             "name": "Discreet",
-            "price": "161,300"
+            "price": "161300"
           },
           "1-Stealth": {
             "name": "Stealth",
-            "price": "163,700"
+            "price": "163700"
           },
           "2-Ultimate": {
             "name": "Ultimate",
-            "price": "166,200"
+            "price": "166200"
           }
         },
         "colors": {
           "0-Daytona Grey Matte Effect": {
             "name": "Daytona Grey Matte Effect",
-            "price": "6,800",
+            "price": "6800",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/A7-Ext-Grey.jpg?alt=media&token=114a0554-66db-4772-a686-0a8023b5bdd3"
           },
@@ -92,23 +92,23 @@
         "trims": {
           "0-V10": {
             "name": "V10",
-            "price": "185,000"
+            "price": "185000"
           },
           "1-V10 Plus": {
             "name": "V10 Plus",
-            "price": "214,900"
+            "price": "214900"
           }
         },
         "colors": {
           "0-Camouflage Green Matte Effect": {
             "name": "Camouflage Green Matte Effect",
-            "price": "6,800",
+            "price": "6800",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Green.jpg?alt=media&token=90af93d6-88a1-4ed3-a727-994953039c12"
           },
           "1-Ara Blue Crystal Effect": {
             "name": "Ara Blue Crystal Effect",
-            "price": "1,290",
+            "price": "1290",
             "type": "ext",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Ext-Blue.jpg?alt=media&token=fd77fd6b-658e-4782-b96b-7c4ba988df12"
           },
@@ -144,49 +144,49 @@
           },
           "7-Vermont Brown": {
             "name": "Vermont Brown",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-1.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "8-Express Red": {
             "name": "Express Red",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-2.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "9-Rotor Grey": {
             "name": "Rotor Grey",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-3.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "10-Black with Express Red stitching": {
             "name": "Black with Express Red stitching",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-4.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "11-Black with Vegas Yellow stitching": {
             "name": "Black with Vegas Yellow stitching",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-5.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "12-Black with Macaw Blue stitching": {
             "name": "Black with Macaw Blue stitching",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-6.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "13-Black with White stitching": {
             "name": "Black with White stitching",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-7.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           },
           "14-Black with Black stitching": {
             "name": "Black with Black stitching",
-            "price": "6,200",
+            "price": "6200",
             "type": "int",
             "src": "https://firebasestorage.googleapis.com/v0/b/carvisualizer-1522183354136.appspot.com/o/R8-Int-8.png?alt=media&token=3271de8a-66e9-44e3-8c3f-3171c45d2193"
           }

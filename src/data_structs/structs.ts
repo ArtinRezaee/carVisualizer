@@ -27,3 +27,26 @@ export interface Manufacturer {
     desc: string,
     models: Model[]
 }
+
+export interface Design {
+    id: string,
+    email: string,
+    manufacturer: string,
+    model: string,
+    trim: string,
+    customization: {
+        ext: Color,
+        int: Color
+    },
+    price: number
+}
+
+export interface User {
+    userID: string,
+    email: string,
+    name: string,
+    phone: string,
+    
+    access: number,
+    createdOn: number
+}

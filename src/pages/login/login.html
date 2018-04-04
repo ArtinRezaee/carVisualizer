@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title *ngIf="!showSignup"><b>Sign In</b></ion-title>
+    <ion-title *ngIf="showSignup"><b>Sign Up</b></ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="close()">
+        <ion-icon name="close" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h1>Car Visualizer</h1>
+
+    <ion-list *ngIf="!showSignup">
+      <form [formGroup]="formSignIn" (ngSubmit)="login()" method="post">
+        <ion-item-group>  
+          <ion-item>
+            <ion-label floating>Email Address</ion-label>
+            <ion-input formControlName="email" type="text" id="email" placeholder="Email" required="required"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input formControlName="password" type="password" id="password" placeholder="Password" required="required" clearOnEdit=false></ion-input>
+          </ion-item>
+
+          <div style="text-align:right; margin-top: 5px;">
+            <a (click)='forgotPassword()'>Forgot your password?</a>
+          </div>            
+
+          <button ion-button block large padding color="buttons" type="submit" style="margin-top:30px; margin-bottom: 15px;">
+            Login
+          </button>
+        </ion-item-group>
+      </form>
+
+      <button ion-button block large outline padding (click)="showSignUp()" color="drkRed">Create New Account</button>
+    </ion-list>
+
+    <ion-list *ngIf="showSignup">
+      <form [formGroup]="formSignUp" (ngSubmit)="signUp()" method="post">
+        <ion-item-group>  
+          <ion-item>
+            <ion-label floating>Name</ion-label>
+            <ion-input formControlName="name" type="text" id="name" placeholder="Name" required="required"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label floating>Email Address</ion-label>
+            <ion-input formControlName="email" type="text" id="email" placeholder="Email" required="required"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label floating>Phone Number</ion-label>
+            <ion-input formControlName="phone" type="text" maxlength="10" id="phone" placeholder="Phone Number" required="required"></ion-input>
+          </ion-item> 
+
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input formControlName="password" type="password" id="password" placeholder="Password" required="required" clearOnEdit=false></ion-input>
+          </ion-item>     
+
+          <button ion-button block large padding color="drkRed" type="submit" style="margin-top:30px; margin-bottom: 15px;">
+            Sign Up
+          </button>
+        </ion-item-group>
+      </form>
+    </ion-list>
+
+</ion-content>
