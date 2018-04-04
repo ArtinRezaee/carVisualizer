@@ -2,11 +2,46 @@
 
   <ion-toolbar>
     <ion-title>BookingConfirmation</ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle>
+        <ion-icon name="menu" color="buttons"></ion-icon>
+      </button>
+    </ion-buttons>    
   </ion-toolbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-card>
+    <img src="{{dealership.srcAdd}}">
+    <ion-card-content>
+      <ion-card-title>
+        Thank you
+        </ion-card-title>
+      <p>
+        Thank you for booking an appointment with {{dealership.name}}. We have received your request and will contact you shortly.
+      </p>
+    </ion-card-content>
+    <ion-item>
+      <ion-icon name="map" item-start large></ion-icon>
+      <h2>Address</h2>
+      <p>{{dealership.address}}</p>
+    </ion-item>
+    
+      <ion-item>
+        <ion-icon name="call" item-left large ></ion-icon>
+        <h2>Phone Number</h2>
+        <p>{{dealership.phone}}</p>
+      </ion-item>
+    
+      <ion-item>
+        <button ion-button icon-left clear item-end (click)="navigate()">
+          <ion-icon name="navigate"></ion-icon>
+          Start
+        </button>
+      </ion-item>
+      
+  </ion-card>
 
 </ion-content>

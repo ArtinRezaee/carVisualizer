@@ -67,14 +67,6 @@
           </ion-item>          
         </ion-row>
       </ion-grid>
-
-      <!-- <ion-card-header text-wrap *ngIf="extClr != undefined && intClr != undefined && total > 0">
-        <u>Selected:</u><br><br>
-        {{extClr.name}}&nbsp;&nbsp;+&nbsp;{{extClr.price | currency:'CAD':'1.0-0'}}<br>
-        {{intClr.name}}&nbsp;&nbsp;+&nbsp;{{intClr.price | currency:'CAD':'1.0-0'}}<br><br>
-        <b>Total Price:&nbsp;{{total | currency:'CAD':'1.0-0'}}</b>
-      </ion-card-header> -->
-
     </ion-card-content>
 
     <button ion-button icon-left clear block icon-start *ngIf="extClr != undefined && intClr != undefined && total > 0" (click)="save()">

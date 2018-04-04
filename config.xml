@@ -82,6 +82,15 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^1.1.16" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-datepicker" spec="^0.9.3" />
+    <plugin name="uk.co.workingedge.phonegap.plugin.launchnavigator" spec="^4.2.0">
+        <variable name="LOCATION_USAGE_DESCRIPTION" value="This app requires access to your location for navigation purposes" />
+    </plugin>
+    <plugin name="cordova-plugin-googlemaps" spec="^2.2.9">
+        <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDOnqVJnuXgdVogO-YrAaADPHToJt3Z9YM" />
+        <variable name="API_KEY_FOR_IOS" value="AIzaSyCZ3rimLEp1PWHVKqQKfvEJtrWXvfDtPHE" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="This app wants to get your location while this app runs only." />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="This app wants to get your location always, even this app runs in background." />
+    </plugin>
     <engine name="android" spec="7.0.0" />
     <engine name="browser" spec="5.0.3" />
     <engine name="ios" spec="4.5.4" />

@@ -55,5 +55,6 @@ export interface Dealerships {
     phone: string,
     address: string,
     name: string,
-    src: string
+    src: string,
+    srcAdd: string
 }
