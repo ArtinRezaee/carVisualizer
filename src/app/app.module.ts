@@ -1,3 +1,4 @@
+import { DealershipPage } from './../pages/dealership/dealership';
 import { CustomizationPage } from './../pages/customization/customization';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
@@ -17,7 +18,8 @@ import { HomePage } from '../pages/home/home';
   declarations: [
     MyApp,
     HomePage,
-    CustomizationPage
+    CustomizationPage,
+    DealershipPage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { HomePage } from '../pages/home/home';
   entryComponents: [
     MyApp,
     HomePage,
-    CustomizationPage
+    CustomizationPage,
+    DealershipPage
   ],
   providers: [
     StatusBar,

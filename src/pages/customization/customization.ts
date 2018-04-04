@@ -1,3 +1,4 @@
+import { DealershipPage } from './../dealership/dealership';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform, LoadingController } from 'ionic-angular';
@@ -92,5 +93,9 @@ export class CustomizationPage {
     this.intClr = color;
     this.sliderTwo.slideTo(this.intColors.indexOf(color), 500);
     this.sliderTwo.lockSwipes(true);
+  }
+
+  goToDealerships(){
+    this.navCtrl.push(DealershipPage, {manufacturer: this.manufacturer, model: this.model, extColor: this.extClr, intColor: this.intClr});
   }
 }

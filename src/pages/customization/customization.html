@@ -30,7 +30,7 @@
 
     <ion-slides #sliderOne *ngIf="!desktop">
       <ion-slide *ngFor="let color of extColors">
-        <img class="iext" src='{{color.src}}'>
+        <img src='{{color.src}}'>
       </ion-slide>
     </ion-slides>
 
@@ -42,7 +42,7 @@
     
     <ion-card-content>
       <ion-card-title>{{model.name}}</ion-card-title>
-      <ion-card-header>{{trim.name}}</ion-card-header>
+      <ion-card-header style="padding-left:0px">{{trim.name}}</ion-card-header>
       <p style="text-align: justify;">{{model.desc}}</p>
 
       <ion-grid>
@@ -79,3 +79,12 @@
   </ion-card>
 
 </ion-content>
+
+<ion-footer *ngIf="manufacturer && model && trim">
+  <ion-buttons end>
+      <button ion-button icon-end margin-right margin-bottom color="buttons" (click)="goToDealerships()">
+          Next
+          <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+  </ion-buttons>
+</ion-footer>
