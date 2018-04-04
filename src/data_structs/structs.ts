@@ -29,8 +29,8 @@ export interface Manufacturer {
 }
 
 export interface Design {
-    id: string,
-    email: string,
+    id?: string,
+    email?: string,
     manufacturer: string,
     model: string,
     trim: string,
@@ -49,4 +49,11 @@ export interface User {
     
     access: number,
     createdOn: number
+}
+
+export interface Dealerships {
+    phone: string,
+    address: string,
+    name: string,
+    src: string
 }

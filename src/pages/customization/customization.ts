@@ -4,7 +4,7 @@ import { Component, ViewChild } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform, LoadingController, ModalController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 
-import { Manufacturer, Model, Trim, Color } from './../../data_structs/structs';
+import { Manufacturer, Model, Trim, Color, Design } from './../../data_structs/structs';
 import { LoginPage } from './../login/login';
 import { Auth } from './../../services/auth';
 
@@ -109,10 +109,7 @@ export class CustomizationPage {
     this.sliderTwo.lockSwipes(true);
   }
 
-  goToDealerships(){
-    this.navCtrl.push(DealershipPage, {manufacturer: this.manufacturer, model: this.model, extColor: this.extClr, intColor: this.intClr});
-  }
-  
+
   save() {
     let loading = this.loadingCtrl.create({spinner:'crescent', content: 'Please Wait...'})
     loading.present();
@@ -132,7 +129,6 @@ export class CustomizationPage {
         price: this.total
       }).then(() => {
         loading.dismiss();
-        this.navCtrl.popToRoot();
       });
     }
     else {
@@ -144,5 +140,19 @@ export class CustomizationPage {
           this.save();
       });      
     }
+  }
+
+  goToDealerships(){
+    let design: Design = {
+      manufacturer: this.manufacturer.name,
+      model: this.model.name,
+      trim: this.trim.name,
+      customization: {
+          ext: this.extClr,
+          int: this.intClr
+      },
+      price: this.total
+    }
+    this.navCtrl.push(DealershipPage, {design: design});
   }
 }

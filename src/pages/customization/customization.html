@@ -41,9 +41,10 @@
     </ion-slides>
     
     <ion-card-title style="padding-left: 15px; margin-top: 20px;">
-      {{model.name}}<br>
-      {{trim.name}} - {{trim.price | currency:'CAD':'1.0-0'}}
+      {{model.name}}
     </ion-card-title>
+    <p padding-left>{{trim.name}} - {{total | currency:'CAD':'1.0-0'}}</p>
+
     <ion-card-content style="text-align: justify;">     
       {{model.desc}}
 
@@ -67,16 +68,16 @@
         </ion-row>
       </ion-grid>
 
-      <ion-card-header *ngIf="extClr != undefined && intClr != undefined && total > 0">
+      <!-- <ion-card-header text-wrap *ngIf="extClr != undefined && intClr != undefined && total > 0">
         <u>Selected:</u><br><br>
         {{extClr.name}}&nbsp;&nbsp;+&nbsp;{{extClr.price | currency:'CAD':'1.0-0'}}<br>
         {{intClr.name}}&nbsp;&nbsp;+&nbsp;{{intClr.price | currency:'CAD':'1.0-0'}}<br><br>
         <b>Total Price:&nbsp;{{total | currency:'CAD':'1.0-0'}}</b>
-      </ion-card-header>
+      </ion-card-header> -->
 
     </ion-card-content>
 
-    <button ion-button icon-left clear block large icon-start *ngIf="extClr != undefined && intClr != undefined && total > 0" (click)="save()">
+    <button ion-button icon-left clear block icon-start *ngIf="extClr != undefined && intClr != undefined && total > 0" (click)="save()">
       <ion-icon name="folder-open"></ion-icon>
       Save
     </button>
@@ -84,7 +85,7 @@
 
 </ion-content>
 
-<ion-footer *ngIf="manufacturer && model && trim">
+<ion-footer>
   <ion-buttons end>
       <button ion-button icon-end margin-right margin-bottom color="buttons" (click)="goToDealerships()">
           Next

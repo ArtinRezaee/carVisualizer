@@ -1,3 +1,5 @@
+import { BookingConfirmationPage } from './../pages/booking-confirmation/booking-confirmation';
+import { BookingPage } from './../pages/booking/booking';
 import { DealershipPage } from './../pages/dealership/dealership';
 import { CustomizationPage } from './../pages/customization/customization';
 import { BrowserModule } from '@angular/platform-browser';
@@ -8,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { DatePicker } from '@ionic-native/date-picker';
 
 import { FIREBASE_CONFING } from './app.firebase.config';
 
@@ -21,11 +24,10 @@ import { Auth } from '../services/auth';
     MyApp,
     HomePage,
     CustomizationPage,
-<<<<<<< HEAD
-    DealershipPage
-=======
-    LoginPage
->>>>>>> 66b1dc76baac9953a4668181d2b6fd9c37624399
+    DealershipPage,
+    LoginPage,
+    BookingPage,
+    BookingConfirmationPage
   ],
   imports: [
     BrowserModule,
@@ -39,17 +41,17 @@ import { Auth } from '../services/auth';
     MyApp,
     HomePage,
     CustomizationPage,
-<<<<<<< HEAD
-    DealershipPage
-=======
-    LoginPage
->>>>>>> 66b1dc76baac9953a4668181d2b6fd9c37624399
+    DealershipPage,
+    LoginPage,
+    BookingPage,
+    BookingConfirmationPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Auth
+    Auth,
+    DatePicker
   ]
 })
 

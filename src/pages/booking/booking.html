@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Booking
+    </ion-title>
+    <ion-buttons end>
+        <button ion-button menuToggle>
+          <ion-icon name="menu" color="buttons"></ion-icon>
+        </button>
+      </ion-buttons>    
+  </ion-navbar>
+  </ion-header>
+
+
+<ion-content padding>
+  <ion-grid>
+    <ion-list>
+      <form [formGroup]="formBooking" (ngSubmit)="book()" method="post">
+        <ion-item-group>  
+          <ion-item no-padding>
+            <ion-label floating>Name</ion-label>
+            <ion-input formControlName="name" type="text" id="name" required="required"></ion-input>
+          </ion-item>
+
+          <ion-item no-padding>
+            <ion-label floating>Email Address</ion-label>
+            <ion-input formControlName="email" type="text" id="email" required="required"></ion-input>
+          </ion-item>
+
+          <ion-item no-padding>
+            <ion-label floating>Phone Number</ion-label>
+            <ion-input formControlName="phone" type="text" maxlength="10" id="phone" required="required"></ion-input>
+          </ion-item>   
+          
+          <ion-item (click)="pickDate()" style="padding-top:26px; padding-left:0px" text-wrap>
+            <ion-icon name="calendar" item-start></ion-icon>
+              {{appointDate}}
+            <ion-icon name="arrow-forward" item-end></ion-icon>
+          </ion-item>
+
+          <button ion-button block large padding color="secondary" type="submit" style="margin-top:30px; margin-bottom: 15px;">
+            Book
+          </button>
+        </ion-item-group>
+      </form>
+    </ion-list>
+  </ion-grid>
+</ion-content>
