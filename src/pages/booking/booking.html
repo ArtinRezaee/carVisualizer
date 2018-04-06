@@ -13,6 +13,7 @@
 
 
 <ion-content padding>
+  <progress-bar [progress]="80"></progress-bar>
   <ion-grid>
     <ion-list>
       <form [formGroup]="formBooking" (ngSubmit)="book()" method="post">

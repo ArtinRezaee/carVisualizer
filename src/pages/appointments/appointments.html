@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Appointments
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button menuToggle>
+        <ion-icon name="menu" color="buttons"></ion-icon>
+      </button>
+    </ion-buttons>    
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let booking of bookings |async" text-wrap>
+      <h2>{{booking.name}}</h2>
+      <p>Email: {{booking.email}}</p>
+      <p>Phone: {{booking.phone}}</p>
+      <p>Dealership: {{booking.dealership.name}}</p>
+      <p>Vehicle: {{booking.design.manufacturer}}, {{booking.design.model}}, {{booking.design.trim}}</p>
+      <p>Designs:</p>
+      <ul>
+        <li><p>Exterior: {{booking.design.customization.ext.name}}</p></li>
+        <li><p>Interior: {{booking.design.customization.int.name}}</p></li>
+      </ul>
+      <p>Price: ${{booking.design.price}}</p>
+      <p>Date: {{booking.date}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>

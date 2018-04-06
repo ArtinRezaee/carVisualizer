@@ -1,4 +1,4 @@
-<ion-menu [content]="nav" persistent="true" side="right">
+<ion-menu [content]="nav" persistent="true" side="right" (ionOpen)="refresh()" (ionClose)="refresh()">
     <ion-header>
         <ion-toolbar>
             <ion-title style="text-transform: capitalize;" text-wrap>Menu</ion-title>
@@ -10,9 +10,9 @@
                 <ion-icon name="home" color="primary" item-left></ion-icon>
                 <b>Home</b>
             </button>
-            <button ion-item menuClose (click)="onSavedCars()" *ngIf="isLoggedIn">
-                <ion-icon name="car" color="brwn" item-left></ion-icon>
-                <b>Saved Cars</b>
+            <button ion-item menuClose (click)="onBookings()" *ngIf="access == 1">
+                <ion-icon name="calendar" color="brwn" item-left></ion-icon>
+                <b>Bookings</b>
             </button>
             <button ion-item menuClose (click)="onLogin()" *ngIf="!isLoggedIn">
                 <ion-icon name="log-in" color="secondary" item-left></ion-icon>

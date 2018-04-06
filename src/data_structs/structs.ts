@@ -58,3 +58,12 @@ export interface Dealerships {
     src: string,
     srcAdd: string
 }
+
+export interface Bookings{
+    email: string,
+    name: string,
+    phone: string,
+    date: string,
+    design: Design,
+    dealership: Dealerships
+}

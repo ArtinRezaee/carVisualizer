@@ -1,3 +1,4 @@
+import { ProgressBarComponent } from './../../components/progress-bar/progress-bar';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Component } from '@angular/core';
 import { NavController, LoadingController } from 'ionic-angular';
@@ -18,6 +19,9 @@ export class HomePage {
   manufacturer: Manufacturer = null;
   model: Model = null;
   trim: Trim = null;
+
+  progressColor = 'primary';
+  mode = 'determinate';
 
   constructor(public navCtrl: NavController, private fDB: AngularFireDatabase, 
     private loadingCtrl: LoadingController) {}

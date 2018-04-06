@@ -12,9 +12,8 @@
   </ion-header>
 
 <ion-content padding>
-
+  <progress-bar [progress]="40"></progress-bar>
   <ion-card>
-
     <ion-slides #sliderOne *ngIf="desktop">
       <ion-slide *ngFor="let color of extColors">
         <img class="dext" src='{{color.src}}'>

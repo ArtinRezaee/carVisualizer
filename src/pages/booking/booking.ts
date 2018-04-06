@@ -16,7 +16,6 @@ export class BookingPage {
 
   formBooking: FormGroup;
   appointDate: string = "Pick Appointment Date"
-  date: Date = null;
   dealership: Dealerships;
   design: Design;
 
@@ -33,10 +32,6 @@ export class BookingPage {
     this.design = this.navParams.get('design');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad BookingPage');
-  }
-
   pickDate(){
     this._datePicker.show({
       date: new Date(),
@@ -45,7 +40,6 @@ export class BookingPage {
     }).then(
       date => {
         this.appointDate = date.toString()
-        this.date = date;
       },
       err => console.log('Error occurred while getting date: ', err)
     );
@@ -58,7 +52,7 @@ export class BookingPage {
       content: 'Signing Up',
     });
 
-    if(this.formBooking.valid && this.date){
+    if(this.formBooking.valid && this.appointDate){
       let email = this.formBooking.get('email').value;
       let name =  this.formBooking.get('name').value;
       let phone =  this.formBooking.get('phone').value;
@@ -73,7 +67,7 @@ export class BookingPage {
             email: email,
             name: name,
             phone: phone,
-            date: this.date,
+            date: this.appointDate,
             design: this.design,
             dealership: this.dealership
           }).then(()=> {

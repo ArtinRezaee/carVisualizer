@@ -1,3 +1,4 @@
+import { AppointmentsPage } from './../pages/appointments/appointments';
 import { BookingConfirmationPage } from './../pages/booking-confirmation/booking-confirmation';
 import { BookingPage } from './../pages/booking/booking';
 import { DealershipPage } from './../pages/dealership/dealership';
@@ -20,6 +21,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { Auth } from '../services/auth';
+import { ProgressBarComponent } from '../components/progress-bar/progress-bar';
 
 @NgModule({
   declarations: [
@@ -29,14 +31,16 @@ import { Auth } from '../services/auth';
     DealershipPage,
     LoginPage,
     BookingPage,
-    BookingConfirmationPage
+    BookingConfirmationPage,
+    AppointmentsPage,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(FIREBASE_CONFING),
     AngularFireAuthModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -46,7 +50,8 @@ import { Auth } from '../services/auth';
     DealershipPage,
     LoginPage,
     BookingPage,
-    BookingConfirmationPage
+    BookingConfirmationPage,
+    AppointmentsPage
   ],
   providers: [
     StatusBar,
