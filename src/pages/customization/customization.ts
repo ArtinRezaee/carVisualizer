@@ -1,7 +1,7 @@
 import { DealershipPage } from './../dealership/dealership';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform, LoadingController, ModalController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform, LoadingController, ModalController, AlertController } from 'ionic-angular';
 import { Slides } from 'ionic-angular';
 
 import { Manufacturer, Model, Trim, Color, Design } from './../../data_structs/structs';
@@ -33,7 +33,7 @@ export class CustomizationPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public platform: Platform,
     public _fDb: AngularFireDatabase, private loadingCtrl: LoadingController, public auth: Auth,
-    public modalCtrl: ModalController) { 
+    public modalCtrl: ModalController, private _alertCtrl: AlertController) { 
       this.manufacturer = this.navParams.get('manufacturer');
       this.model = this.navParams.get('model');
       this.trim = this.navParams.get('trim');
@@ -129,6 +129,7 @@ export class CustomizationPage {
         price: this.total
       }).then(() => {
         loading.dismiss();
+        this.showAlert("Success!", "Your customization has been saved");
       });
     }
     else {
@@ -154,5 +155,14 @@ export class CustomizationPage {
       price: this.total
     }
     this.navCtrl.push(DealershipPage, {design: design});
+  }
+
+  showAlert(title: string, msg: string) {
+    let alert = this._alertCtrl.create({
+      title: title,
+      subTitle: msg,
+      buttons: ['OK']
+    });
+    alert.present();
   }
 }
